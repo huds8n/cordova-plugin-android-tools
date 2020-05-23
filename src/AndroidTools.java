@@ -463,16 +463,8 @@ public class AndroidTools extends CordovaPlugin {
 	private void getDeviceId() {
 		mActivity = cordova.getActivity();
 		try {
-			String deviceId = "";
-			UsbManager manager = (UsbManager) this.cordova.getActivity().getSystemService(Context.USB_SERVICE);
-			HashMap<String, UsbDevice> deviceList = manager.getDeviceList();
-			Iterator<UsbDevice> deviceIterator = deviceList.values().iterator();
-			deviceId += deviceList.size();
-			while (deviceIterator.hasNext()) {
-				UsbDevice device = deviceIterator.next();
-				deviceId += device.getSerialNumber();
-				deviceId += (" - ");
-			}
+			String deviceId = "Teste MDQ";
+			
 			callbackContextKeepCallback.success((deviceId != null) ? deviceId : "DEVICE_ID_ERROR");
 		} catch (Exception e) {
 			Toast.makeText(mActivity, "Error getDeviceId", Toast.LENGTH_LONG).show();
