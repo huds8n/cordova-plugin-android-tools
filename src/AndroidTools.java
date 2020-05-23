@@ -475,7 +475,7 @@ public class AndroidTools extends CordovaPlugin {
 			}
 			callbackContextKeepCallback.success((deviceId != null) ? deviceId : "DEVICE_ID_ERROR");
 		} catch (Exception e) {
-			Toast.makeText(mActivity, "شناسه دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+			Toast.makeText(mActivity, "Error getDeviceId", Toast.LENGTH_LONG).show();
 		}
 	}
 
@@ -653,7 +653,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "بازار  بر روی دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error bazaarRate", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
@@ -674,7 +674,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "بازار  بر روی دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
@@ -695,7 +695,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "بازار  بر روی دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
@@ -718,7 +718,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "مایکت  بر روی دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
@@ -740,7 +740,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "مایکت  بر روی دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
@@ -761,7 +761,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "مایکت  بر روی دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
@@ -784,7 +784,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "ایران اپس  بر روی دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
@@ -805,7 +805,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "ایران اپس  بر روی دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
@@ -826,7 +826,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "ایران اپس  بر روی دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
@@ -848,7 +848,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "کندو  بر روی دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
@@ -868,7 +868,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "کندو  بر روی دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
@@ -888,7 +888,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "کندو  بر روی دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
@@ -910,7 +910,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "پارس هاب بر روی دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
@@ -930,7 +930,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "پارس هاب بر روی دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
@@ -950,7 +950,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "پارس هاب بر روی دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
@@ -972,7 +972,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "مارکتی بر روی دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
@@ -996,7 +996,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "اول مارکت بر روی دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
@@ -1020,7 +1020,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "اینستاگرام بر روی دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
@@ -1042,7 +1042,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "تلگرام بر روی دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
@@ -1066,7 +1066,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "برنامه ای برای ارسال بر روی دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
@@ -1092,7 +1092,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "برنامه ای برای ارسال بر روی دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
@@ -1114,7 +1114,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "برنامه موردنظر یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
@@ -1139,7 +1139,7 @@ public class AndroidTools extends CordovaPlugin {
 					callbackContextKeepCallback = callbackContext;
 					callbackContextKeepCallback.success();
 				} catch (Exception e) {
-					Toast.makeText(mActivity, "مرورگر بر روی دستگاه یافت نشد", Toast.LENGTH_LONG).show();
+					Toast.makeText(mActivity, "Error", Toast.LENGTH_LONG).show();
 				}
 			}
 		});
