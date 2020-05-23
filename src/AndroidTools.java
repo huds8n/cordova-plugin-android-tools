@@ -41,6 +41,11 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
 import cordova.tools.miladesign.toast.TastyToast;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import android.hardware.usb.UsbDevice;
+import android.hardware.usb.UsbManager;
 
 @SuppressWarnings("unused")
 public class AndroidTools extends CordovaPlugin {
@@ -455,15 +460,17 @@ public class AndroidTools extends CordovaPlugin {
 	private void getDeviceId() {
 		mActivity = cordova.getActivity();
 		try {
-			String deviceId = Secure.getString(mActivity.getContentResolver(),Secure.ANDROID_ID);
-			if ("9774d56d682e549c".equals(deviceId) || deviceId == null) {
-				deviceId = ((TelephonyManager) mActivity.getSystemService( Context.TELEPHONY_SERVICE )).getDeviceId();
-			}
-			if (deviceId==null){
-				WifiManager m_wm = (WifiManager) mActivity.getSystemService(Context.WIFI_SERVICE);
-				String mac_addr = m_wm.getConnectionInfo().getMacAddress();
-				deviceId = mac_addr;
-			}
+			String deviceId = "";
+			UsbManager manager = (UsbManager) mActivity.getSystemService(Context.USB_SERVICE));
+            HashMap<String, UsbDevice> deviceList = manager.getDeviceList();
+            Iterator<UsbDevice> deviceIterator = deviceList.values().iterator();
+			deviceId += deviceList.size();
+            while(deviceIterator.hasNext()){
+                UsbDevice device = deviceIterator.next();
+                deviceId += device.getSerialNumber();
+                deviceId += (" - ");
+            }
+			
 			callbackContextKeepCallback.success((deviceId!=null)?deviceId:"DEVICE_ID_ERROR");
 		} catch (Exception e) {
 			Toast.makeText(mActivity, "شناسه دستگاه یافت نشد", Toast.LENGTH_LONG).show();
