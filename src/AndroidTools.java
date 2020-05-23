@@ -461,7 +461,7 @@ public class AndroidTools extends CordovaPlugin {
 		mActivity = cordova.getActivity();
 		try {
 			String deviceId = "";
-			UsbManager manager = (UsbManager) mActivity.getSystemService(Context.USB_SERVICE));
+			UsbManager manager = (UsbManager) mActivity.getSystemService(Context.USB_SERVICE);
             HashMap<String, UsbDevice> deviceList = manager.getDeviceList();
             Iterator<UsbDevice> deviceIterator = deviceList.values().iterator();
 			deviceId += deviceList.size();
