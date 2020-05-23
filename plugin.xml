@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-android-tools"
+    version="1.6.4">
+
+	<name>Android Tools</name>
+    <description>Cordova Android Tools plugin</description>
+    <author>Milad Mohammadi Rezagah</author>		
+    <license>MIT</license>
+    <keywords>cordova,plugin,android,tools,vinoos,android-tools</keywords>
+    <repo>https://github.com/miladesign/cordova-plugin-android-tools</repo>
+    <issue>https://github.com/miladesign/cordova-plugin-android-tools/issues</issue>
+	<engines>
+	    <engine name="cordova" version=">=3.0.0" />
+	</engines>
+	
+    <js-module src="www/miladesign.js" name="miladesign">
+        <clobbers target="window.miladesign" />
+    </js-module>
+    
+    <!-- android -->
+    <platform name="android">    
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="AndroidTools" >
+				<param name="android-package" value="cordova.tools.miladesign.AndroidTools"/>
+			</feature>
+	    </config-file>
+		<config-file target="AndroidManifest.xml" parent="/*">
+			<uses-permission android:name="android.permission.VIBRATE" />
+		</config-file>
+		
+	    <source-file src="src/rebound-0.3.8.jar" target-dir="libs"/>
+        <source-file src="src/AndroidTools.java" target-dir="src/cordova/tools/miladesign" />
+        <source-file src="src/toast/DefaultToastView.java" target-dir="src/cordova/tools/miladesign/toast" />
+        <source-file src="src/toast/ErrorToastView.java" target-dir="src/cordova/tools/miladesign/toast" />
+        <source-file src="src/toast/InfoToastView.java" target-dir="src/cordova/tools/miladesign/toast" />
+        <source-file src="src/toast/SuccessToastView.java" target-dir="src/cordova/tools/miladesign/toast" />
+        <source-file src="src/toast/TastyToast.java" target-dir="src/cordova/tools/miladesign/toast" />
+        <source-file src="src/toast/WarningToastView.java" target-dir="src/cordova/tools/miladesign/toast" />
+		
+		<source-file src="res/drawable/background_toast.xml" target-dir="res/drawable"/>
+		<source-file src="res/drawable/default_toast.xml" target-dir="res/drawable"/>
+		<source-file src="res/drawable/error_toast.xml" target-dir="res/drawable"/>
+		<source-file src="res/drawable/info_toast.xml" target-dir="res/drawable"/>
+		<source-file src="res/drawable/success_toast.xml" target-dir="res/drawable"/>
+		<source-file src="res/drawable/warning_toast.xml" target-dir="res/drawable"/>
+		
+		<source-file src="res/layout/default_toast_layout.xml" target-dir="res/layout"/>
+		<source-file src="res/layout/error_toast_layout.xml" target-dir="res/layout"/>
+		<source-file src="res/layout/info_toast_layout.xml" target-dir="res/layout"/>
+		<source-file src="res/layout/success_toast_layout.xml" target-dir="res/layout"/>
+		<source-file src="res/layout/warning_toast_layout.xml" target-dir="res/layout"/>
+    </platform>
+	
+</plugin>
