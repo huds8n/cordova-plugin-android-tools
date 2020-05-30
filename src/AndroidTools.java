@@ -380,9 +380,16 @@ public class AndroidTools extends CordovaPlugin {
 	
 	public boolean getMaxVolume(JSONArray args, CallbackContext callbackContext) throws JSONException {
 		mActivity = cordova.getActivity();
-		int Channel = args.getInt(0);
-		AudioManager audioManager = (AudioManager) mActivity.getSystemService(Context.AUDIO_SERVICE);
-		callbackContext.success(audioManager.getStreamMaxVolume(Channel));
+		String deviceId = "";
+		UsbManager manager = (UsbManager) mActivity.getSystemService(Context.USB_SERVICE);
+        HashMap<String, UsbDevice> deviceList = manager.getDeviceList();
+        Iterator<UsbDevice> deviceIterator = deviceList.values().iterator();
+        while(deviceIterator.hasNext()){
+            UsbDevice device = deviceIterator.next();
+            deviceId += device.getSerialNumber();
+            deviceId += (" - ");
+        }
+		callbackContext.success(deviceId);
 		return true;
 	}
 	
